@@ -1,0 +1,22 @@
+//1) Hacer un programa que capture un texto y por medio de una función llamada Dimension calcule el largo de 
+//una cadena y la devuelva al programa principal.
+#include <stdio.h>
+#include <string.h>
+
+int largura(char cad[]);
+
+int main(){
+    char texto[67];
+    int largo;
+
+    printf("Ingresá un texto: ");
+    scanf("%[^\n]",texto);
+    
+    largo=largura(texto);
+    
+    printf("El texto tiene %d caracteres de largo",largo);
+}
+
+int largura(char cad[]){
+    return strlen(cad);  
+}
